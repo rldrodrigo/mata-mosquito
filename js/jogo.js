@@ -18,7 +18,7 @@ function posicaoRandomica() {
         document.getElementById('mosquito').remove()
 
         if (vidas > 3) {
-            alert('Vidas Esgotadas (Game Over)')
+            window.location.href = 'fim_de_jogo.html'
         } else {
             document.getElementById('v' + vidas).src = 'img/coracao_vazio.png'
             vidas++
@@ -45,7 +45,7 @@ function posicaoRandomica() {
     mosquito.style.top = posicaoY + 'px'
     mosquito.style.position = 'absolute'
     mosquito.id = 'mosquito'
-    mosquito.onclick = function() {
+    mosquito.onclick = function () {
         this.remove()
     }
 
