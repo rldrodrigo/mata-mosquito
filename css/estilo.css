@@ -12,3 +12,14 @@
     width: 90px;
     height: 90px;
 }
+
+
+/* Posição padrão*/
+
+.ladoA {
+    transform: scaleX(1);
+}
+
+.ladoB {
+    transform: scaleX(-1);
+}
